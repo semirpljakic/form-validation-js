@@ -18,27 +18,27 @@ myBtn.addEventListener('click', function (e) {
   let erorrs = [];
   if (userData.uv.lenght > 20 || userData.uv.length == 0) {
     username.style.border = '1px solid tomato';
-    username.setAttribute('title', 'Predugacak username ili je prazan!');
-    erorrs.push('Predugacak username!');
+    username.setAttribute('title', 'Username too long or empty!');
+    erorrs.push('Username too long or empty!');
   } else {
     username.style.border = '1px solid green';
-    username.setAttribute('title', 'Username je okej!');
+    username.setAttribute('title', 'Username is okay!');
   }
   if (userData.pv !== '12345') {
     password.style.border = '1px solid tomato';
-    password.setAttribute('title', 'Password nije tacan!');
-    erorrs.push('Password nije tacan!');
+    password.setAttribute('title', 'Password is not correct!');
+    erorrs.push('Password is not correct!');
   } else {
     password.style.border = '1px solid green';
-    password.setAttribute('title', 'Password je okej!');
+    password.setAttribute('title', 'Password is okay!');
   }
   if (userData.ev.indexOf('@gmail.com') == -1) {
     email.style.border = '1px solid tomato';
-    email.setAttribute('title', 'Email mora biti @gmail.com');
-    erorrs.push('Email mora biti @gmail.com');
+    email.setAttribute('title', 'Email must be "@gmail.com"');
+    erorrs.push('Email must be "@gmail.com"');
   } else {
     email.style.border = '1px solid green';
-    email.setAttribute('title', 'Email je okej!');
+    email.setAttribute('title', 'Email is okay!');
   }
 
   if (erorrs.length == '') {
